@@ -19,6 +19,7 @@ O ViaCep é uma aplicação Angular que permite buscar informações de endereç
 - Angular Material
 - Reactive Forms
 - API ViaCep
+- Tailwind
 
 ## Servidor de Desenvolvimento
 
