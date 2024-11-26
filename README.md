@@ -1,27 +1,65 @@
-# ViaCep
+# [ViaCep](https://viacep.com.br/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 17.3.8.
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+O ViaCep é uma aplicação Angular que permite buscar informações de endereço com base no CEP fornecido. Utiliza a API pública do ViaCep para obter os dados.
 
-## Code scaffolding
+## Funcionalidades
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Busca de endereço por CEP
+- Exibição de informações como cidade, estado, bairro, logradouro e complemento
+- Validação de formulário para garantir que o CEP tenha pelo menos 8 caracteres
+- Mensagens de erro amigáveis para o usuário
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- Angular Material
+- Reactive Forms
+- API ViaCep
 
-## Running unit tests
+## Servidor de Desenvolvimento
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute `ng serve` para iniciar um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. A aplicação será recarregada automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Running end-to-end tests
+## Estrutura do Projeto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```plaintext
+src/
+├── app/
+│   ├── buscar-endereco/
+│   │   ├── buscar-endereco.component.html
+│   │   ├── buscar-endereco.component.scss
+│   │   ├── buscar-endereco.component.ts
+│   │   ├── buscar-endereco.service.ts
+│   │   └── model/
+│   │       └── viacep.ts
+│   ├── app.component.html
+│   ├── app.component.ts
+│   ├── app.module.ts
+│   └── app.routes.ts
+├── assets/
+├── environments/
+├── index.html
+└── main.ts
+```
 
-## Further help
+# Como Usar
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 1. Clone o repositório:
+```bash
+git clone https://github.com/PierreSantos/ViaCep.git
+cd via-cep
+```
+## 2. Instale as dependências
+```bash
+npm install
+```
+## 3. Inicie o servidor de desenvolvimento
+```bash
+npm start
+```
+## 4. Abra o navegador e navegue até:
+ http://localhost:4200/
